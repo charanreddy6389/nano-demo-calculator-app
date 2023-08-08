@@ -2,6 +2,7 @@
 #include "routes.cpp"
 #include <string>
 #include <iostream>
+using namespace std;
 int main()
 {
   crow::SimpleApp app;
@@ -13,5 +14,8 @@ int main()
       .methods("POST"_method)(&subtract);
 
   app.port(8080).run();
+  
+  int hello=52;
+  cout<<hello;
   return 0;
 }
